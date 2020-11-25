@@ -1,0 +1,76 @@
+#1 Create three variables in a single line and assign values to them in such a manner that each one of
+#them belongs to a different data type
+
+a = 1
+b = 2.5
+c = "Alex"
+print (type(a) ,type(b) ,type(c))
+#
+#2 Create a variable of type complex and swap it with another variable of type integer#
+
+a = 1
+b = 1+2j
+a , b = b , a
+print ("a =" , a)
+print ("b =" , b)
+
+#3 Swap two numbers using a third variable and do the same task without using any third variable.
+
+a = 1
+b = 1+2j
+a , b = b , a
+print ("a =" , a)
+print ("b =" , b)
+
+4.Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x
+Version.
+  Python 3x
+  a = input("enter a value:")
+  print(a)
+
+  Python 2x
+  a = raw_input("enter a value:")
+  print(a)
+
+
+
+ 5.Write a program to complete the task given below:
+Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in
+another variable called z. Add 30 to z and store the output in variable result and print result as the
+final output.
+
+a = input("enter number between 1-10:")
+b = input("enter number between 1-10:")
+z = int (a )+ int (b)
+print (z)
+x = int(z) + 30
+print (x)
+
+6.Write a program to check the data type of the entered values.
+HINT: Printed output should say - The data type of the input value is : int/float/string/etc
+
+a = eval(input("enter the value a:"))
+print ("The data type of the input value:" ,a)
+
+7.Create Variables using formats such as Upper CamelCase, Lower CamelCase, SnakeCase and
+UPPERCASE.
+lower camel case--
+mahimaPandya
+
+UpperCamel
+MahimaPandya
+
+Snakecase
+mahima_pandya
+
+Uppercase
+MAHIMAPANDYA
+
+8.If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’
+again. Will it change the value? If Yes then Why?
+
+a = int(input("value of a:"))
+a = float(input("value of a:"))
+print(a)
+Value of 'a' will b changes as t will take the last value entered.
+
