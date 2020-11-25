@@ -1,0 +1,79 @@
+1. Create a list of 10 elements of four different data types like int, string, complex and float.
+list=["John",23,45.5,3j,"Garry",45.9,10,52j]
+print(list))
+
+2. Create a list of size 5 and execute the slicing structure
+list=[45,"John",4500,98,38.9]
+l=list[-4:-1]
+print(l)
+
+
+3. Write a program to get the sum and multiply of all the items in a given list.
+a_list = [2, 3, 4]
+
+total=sum(a_list)
+print(total)
+   
+4. Find the largest and smallest number from a given list.
+list=[45,98,100,1001]
+list.sort()
+print("smallest number",min(list))
+
+    list=[45,98,100,1001]
+    list.sort()
+     print("largest number",max(list))
+
+5. Create a new list which contains the specified numbers after removing the even numbers from a
+predefined list.
+list=[45,98,100,1001,39,97]
+for i in list:
+    if (i%2==0):
+
+     print(i)
+
+6.  Create a list of elements such that it contains the squares of the first and last 5 elements between
+1 and30 (both included).
+list=[]
+for i in range(1,31):
+    list.append(i**2)
+
+print(list[:5])
+print(list[-5:])
+
+7. Write a program to replace the last element in a list with another list.
+Sample input: [1,3,5,7,9,10], [2,4,6,8]
+Expected output: [1,3,5,7,9,2,4,6,8]
+list=[1,2,3,4]
+list1=[9,4,8]
+list.pop()
+print(list)
+print(list+list1)
+
+
+
+8. Create a new dictionary by concatenating the following two dictionaries:
+Sample input: a={1:10,2:20} b={3:30,4:40}
+Expected output: {1:10,2:20,3:30,4:40}
+a={"jojn":45, "Leela":50}
+b={"Meena":44, "Sheila":25}
+c={**a,**b}
+print(c)
+
+9. Create a dictionary that contain numbers in the form(x:x*x) where x takes all the values between 1
+and n(both 1 and n included).
+n=int(input("enter number,range 1 to 5:"))
+d=dict()
+for x in range(1,n+1):
+    d[x]=x*x
+print(d)
+
+10. Write a program which accepts a sequence of comma-separated numbers from console and
+generates a list and a tuple which contains every number in the form of string.
+Sample input: 34,67,55,33,12,98
+Expected output: [‘34’,’67’,’55’,’33’,’12’,’98’] (‘34’,’67’,’55’,’33’,’12’,’98’)
+x=input("Input comma seperated numbers:")
+list=x.split(",")
+tuple=tuple(list)
+print("list:",list)
+print("tuple:",tuple)
+
