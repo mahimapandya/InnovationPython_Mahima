@@ -1,0 +1,22 @@
+import time
+min_level=0
+max_level=5
+current_level=0
+print("The Elevator starting from level:{}".format(current_level))
+direction=1
+while 1>0:#
+    if direction==1:#going up
+        print("{}.".format(current_level))
+        time.sleep(3)#
+        current_level+=1
+        if current_level==max_level:
+            direction=0
+            # self.current_level-=1
+
+    elif direction == 0:#going down
+        print("{}.".format(current_level))
+        time.sleep(3)
+        current_level -= 1
+        if current_level == min_level:
+            direction = 1
+
